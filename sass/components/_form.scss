@@ -1,0 +1,142 @@
+.form {
+    position: relative;
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $headerColor;
+        margin-bottom: 12px;
+        }
+    
+    &__fild {        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        }
+    
+    &__label {    
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        margin-bottom: 4px;
+        color: $mainColor;
+    }
+    &__decoration {
+        display: flex;
+        align-items: center;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .form__fild:focus-within &{
+                fill: $secondaryColor;
+        
+            }
+    }
+    &__input {
+        position: relative;
+        display: inline-block;
+    
+        padding: 10px;
+        padding-left: 42px;
+        width: 100%;
+    
+        box-sizing: border-box;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .form__fild:focus-within &{
+            border-color:$secondaryColor;
+            outline: transparent;
+        }
+        }
+    &__img {
+        position: absolute;
+        transform: translate(12px, 0px);
+        width: 18px;
+        height: 18px;
+    }
+    &__coments {
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        resize: none;
+    
+        box-sizing: border-box;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        cursor: pointer;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .form__fild:focus-within &{
+            border-color: #188CE8;
+            outline: transparent;
+        }
+    }
+}
+.checkbox {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+    &__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+    }
+    &__input{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    
+    &__img {
+        margin-right: 8px;
+        box-sizing: border-box;
+        border: 3px solid $headerColor;
+        border-radius: 3px;
+        width: 16px;
+        height: 15px;
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .checkbox__input:checked+& {
+                border: 0px transparent;
+                background: $secondaryColor;
+            }
+    }
+    &__link{
+        display: inline-block;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        margin-left: 4px;
+        color: $secondaryColor;
+    }
+}

@@ -1,0 +1,33 @@
+.work {
+    display: flex;
+    font-size: 0;
+
+    &__card {
+            position: relative;
+        }
+    &__card:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__item {
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        height: 70px;
+        width: 370px;
+        text-align: center;
+        background-color: rgba(47, 48, 58, 0.8);
+    
+    
+    }
+    &__text {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        color: $whiteColor;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    
+    }
+}
