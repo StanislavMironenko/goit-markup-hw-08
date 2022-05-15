@@ -1,8 +1,15 @@
 .filters {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     
+    @include for-desktop-up{
+    justify-content: center;
+    }
+    &__item{
+        margin-left: 8px;
+        margin-bottom: 15px;
+    }
     &__item:not(:last-child){
         margin-right: 9px;
         &:hover, &:focus{

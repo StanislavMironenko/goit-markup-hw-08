@@ -2,14 +2,42 @@
     display: flex;
     flex-wrap: wrap;
 
+    &__item{
+        width: 47%;
+
+        @include for-desktop-up {
+            width: 170px;
+                // width: 0%
+        }
+
+    }
+
+    &__item:nth-child(odd) {
+    
+            margin-right: 3%;
+        }
+        &__item:nth-last-child(2n){
+            margin-bottom: 30px;
+            
+            @include for-desktop-up{
+                margin-bottom: 0;
+            }
+            
+        }
+
+
     &__item:not(:last-child) {
+
+        @include for-desktop-up{
             margin-right: 30px;
+        }
         }
     &__icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 170px;
+        // width: 170px;
+        width: 100%;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;

@@ -10,15 +10,32 @@
 
     &__inner {
             display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
             align-items: baseline;
+
+
+
+            @include for-desktop-up{
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
         }
 
     &__title {
         display: flex;
+        justify-content: center;
         font-size: 14px;
+        
         text-transform: uppercase;
         color: $whiteColor;
         margin-bottom: 20px;
+
+        @include for-desktop-up{
+            justify-content: flex-start;
+        }
+
     }
     &__logo{
         margin-bottom: 30px;
@@ -26,8 +43,17 @@
     &__contacts {
         display: flex;
         flex-direction: column;
+        align-items: center;
         font-size: 14px;
-        margin-right: 70px;
+        margin: 0 auto 60px;  
+        
+        
+        @include for-desktop-up{
+            align-items: stretch;
+            margin: 0;
+            margin-right: 70px;
+        }
+       
     }
 
     &__link {
@@ -41,11 +67,25 @@
             }
         }
     &__social{
-        display: flex;
+        margin: 0 auto 60px;
+
+            @include for-desktop-up{
+                margin: 0;
             }
+
+
+            }
+
+
     &__form {
-        display: block;
-        margin-left: 93px;
+            text-align: center;
+            margin: 0 auto;
+
+        @include for-desktop-up{
+            margin: 0;
+            margin-left: 93px;
+            text-align: left;
+        }
     }
     &__input {
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -54,11 +94,21 @@
         border-radius: 4px;
         background-color: #2F303A;
         padding: 15px 16px;
-        width: 358px;
+        max-width: 358px;
+        width: 100%;
         color: $whiteColor;
         cursor: pointer;
-        margin-right: 12px;
+        
+        margin-bottom: 20px;
+
+        @include for-desktop-up{
+            width: 358px;
+            margin-bottom: 0;
+            margin-right: 12px;
+        }
     }
+
+   
 }
 .address{
     font-style: normal;

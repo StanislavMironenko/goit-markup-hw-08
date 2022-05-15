@@ -2,11 +2,15 @@
     display: block;
 
     font-family: 'Raleway';
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     line-height: 1.17;
 
     color: $secondaryColor;
+
+    @include for-desktop-up{
+        font-size: 26px;
+    }
 
 
     

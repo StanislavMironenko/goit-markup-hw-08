@@ -19,19 +19,29 @@ body {
     letter-spacing: 0.03em;
 
 }
+
 .container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 
 }
 .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @include for-desktop-up {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 
     &--notpaddingbot{
+
+        @include for-desktop-up{
         padding-bottom: 0;
+    }
     }
 
     &--color{

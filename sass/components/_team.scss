@@ -1,16 +1,31 @@
 .team {
     display: flex;
+    flex-wrap: wrap;
+
+    @include for-desktop-up{
+        flex-wrap: nowrap;
+    }
 
     &__card {
-            background-color:$whiteColor;
-            text-align: center;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+
+        background-color:$whiteColor;
+        text-align: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
             &:not(:last-child) {
-                    margin-right: 30px;
+                margin-bottom: 30px;
+
+                @include for-desktop-up {
+                        margin-right: 30px;
+                        margin-bottom: 0;
+                    }
+                   
                 }
         }
-
+        &__img{
+            width: 100%;
+        }
 
     &__name {
         margin-bottom: 10px;
@@ -28,5 +43,8 @@
     &__info {
         padding-top: 30px;
         padding-bottom: 16px;
+    }
+    &__social{
+        padding: 0 32px 30px 32px;
     }
 }
