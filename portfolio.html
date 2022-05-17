@@ -20,13 +20,13 @@
     <title>Portfolio</title>
   </head>
   <body>
-       <header class="header ">
+     <header class="header ">
       <div class="container header__inner">
         <a class="logo linknon header__logo" href="#">Web<span class="logo--black">Studio</span></a>
         <nav class="nav">
           <ul class="nav__list ">
-            <li class="nav__item"><a class="nav__link  linknon" href="./index.html">Студия</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--active linknon" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--active linknon" href="./index.html">Студия</a></li>
+            <li class="nav__item"><a class="nav__link linknon" href="./portfolio.html">Портфолио</a></li>
             <li class="nav__item"><a class="nav__link linknon" href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -46,14 +46,15 @@
           </li>
         </ul>
       </div>
-      <button class="burger" type="button">
-                   <span class="burger__item">menu</span>
-                </button>
-                <div class="mobile is-hidden">
-                  <button type="button" class="button__esc" data-modal-close> 
-           <svg class="button__x">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
-          </svg></button>
+                  <button class="burger" type="button" data-mobile-open>
+                          <span class="burger__item">menu</span>
+                  </button>
+      <!-- <div class="backdrop-menu is-hidden" > -->
+        <div class="mobile is-hidden" data-mobile>
+                  <button type="button" class="button__mobil" data-mobile-close> 
+                    <svg class="button__mobil--x">
+                    <use href="./images/symbol-defs.svg#icon-close_mobil"></use>
+                    </svg></button>
                 <div class="mobile__menu">
                   <nav class="nav mobile__nav">
                     <ul class="nav__list ">
@@ -64,30 +65,31 @@
                   </nav>
                   <ul class=" mobil__contacts">
                     <li class="contacts__item">
-                      <a class="contacts__link linknon" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                      <a class="contacts__link contacts__link--tel linknon" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                     <li class="contacts__item">
-                      <a class="contacts__link linknon" href="tel:+380961111111">+38 096 111 11 11</a>
+                      <a class="contacts__link contacts__link--mail linknon" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                   </ul>
                   <div class="mobile__social">
-                   <ul>
-                     <li>
-                       <a class="linknon" href="">Instagram</a>
+                   <ul class="social">
+                     <li class="social__item">
+                       <a class="social__link linknon" href="">Instagram</a>
                      </li>
-                      <li>
-                       <a class="linknon" href="">Twitter</a>
+                      <li class="social__item">
+                       <a class="social__link linknon" href="">Twitter</a>
                      </li>
-                      <li>
-                       <a class="linknon" href="">Facebook</a>
+                      <li class="social__item">
+                       <a class="social__link linknon" href="">Facebook</a>
                      </li>
-                      <li>
-                       <a class="linknon" href="">LinkedIn</a>
+                      <li class="social__item">
+                       <a class="social__link linknon" href="">LinkedIn</a>
                      </li>
                    </ul>
                   </div>
                 </div>
                 </div>
+                <!-- </div> -->
     </header>
     <main>
       <section class="section port">
@@ -306,5 +308,6 @@
         
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

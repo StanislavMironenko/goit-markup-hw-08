@@ -1,9 +1,13 @@
 .nav {
     display: flex;
+    
 
     @include for-phone-only {
             display: none;
 
+        }
+        @include for-tablet-only{
+            margin-right: 84px;
         }
    
 
@@ -12,11 +16,12 @@
             
                 @include for-phone-only{
                     flex-direction: column;
+                    
                 }
             }
         &__link {
             display: block;
-            padding-top: 0px;
+            padding-top: 32px;
             padding-bottom: 32px;
             font-size: 14px;
             font-weight: 500;
@@ -25,7 +30,7 @@
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
             @include for-phone-only {
-                    padding-top: 32px;
+                    padding-top: 0px;
                     padding-bottom: 32px;
                     font-size: 40px;
                     
@@ -54,7 +59,7 @@
                             
                         }
                     }
-                 
+             
             }
          }
              &__item:not(:last-child) {

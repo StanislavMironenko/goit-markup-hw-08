@@ -1,12 +1,18 @@
 .burger {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     display: block;
+    width: 40px;
+    height: 40px;
+
 
     padding: 12px 8px;
     background: none;
     border: 0;
     cursor: pointer;
 
-    @include for-tablet-up{
+    @include for-phone-up{
         display: none;
     }
 
@@ -45,10 +51,10 @@
 
             }
             &::after{
-                bottom: -4px;
+                bottom: -6px;
             }
             &::before{
-                top: -4px;
+                top: -6px;
             }
 
 

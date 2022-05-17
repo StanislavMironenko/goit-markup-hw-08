@@ -79,4 +79,30 @@
         width: 11px;
         height: 11px;
     }
+
+    &__mobil{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+            top: 8px;
+            right: 8px;
+        border: 0 transparent;
+        height: 40px;
+        width: 40px;
+        fill: $headerColor;
+        background-color: $whiteColor;
+
+
+        &:hover{
+            fill: $secondaryColor;
+        }
+
+
+        &--x{
+            height: 40px;
+            width: 40px;
+        }
+    }
 }

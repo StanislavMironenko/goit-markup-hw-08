@@ -2,10 +2,24 @@
     display: flex;
     justify-content: center;
     
+    @include for-phone-only{
+        justify-content: flex-start;
+    }
 
     &__item:not(:last-child) {
             margin-right: 10px;
+
+            @include for-phone-only{
+                border-right: 1px solid rgba(33, 33, 33, 0.2);
+                color: $secondaryColor;
+                padding-right:10px;
+            }
         }
+    &__link{
+        color: $secondaryColor;
+        font-size: 18px;
+
+    }
 
     &__icon {
         display: flex;

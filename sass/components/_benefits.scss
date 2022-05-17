@@ -7,15 +7,39 @@
         flex-wrap: nowrap;
     }
 
-    
-    &__item:not(:last-child) {
-        display: block;
-        margin-bottom: 30px;
+    &__item{
+        margin-bottom: 30px ;
 
-        @include for-desktop-up{
+        @include for-tablet-only{
+            width: calc((100%-70px)/2);
+        }
+
+        &:nth-child(odd){
+
+            @include for-tablet-only{
             margin-right: 30px;
+            
+            }
         }
-        }
+
+
+        &:not(:last-child) {
+                display: block;
+                margin-bottom: 30px;
+        
+                @include for-desktop-up {
+                    margin-right: 30px;
+                }
+            }
+    }
+    // &__item:not(:last-child) {
+    //     display: block;
+    //     margin-bottom: 30px;
+
+    //     @include for-desktop-up{
+    //         margin-right: 30px;
+    //     }
+    //     }
 
     &__img {
             display: flex;
@@ -29,7 +53,7 @@
             background-color: $buttonColor;
 
             @include for-tablet-only{
-                width: 50%;
+               
             }
 
             @include for-desktop-up{
