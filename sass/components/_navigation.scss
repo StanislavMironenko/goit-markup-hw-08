@@ -1,11 +1,8 @@
 .nav {
-    display: flex;
+    display: none;
+    // display: flex;
     
 
-    @include for-phone-only {
-            display: none;
-
-        }
         @include for-tablet-only{
             margin-right: 84px;
         }

@@ -12,7 +12,7 @@
     border: 0;
     cursor: pointer;
 
-    @include for-phone-up{
+    @include for-tablet-up{
         display: none;
     }
 

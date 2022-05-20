@@ -10,17 +10,15 @@
     &__item{
         margin-bottom: 30px ;
 
-        @include for-tablet-only{
-            width: calc((100%-70px)/2);
-        }
+       
 
-        &:nth-child(odd){
+        // &:nth-child(odd){
 
-            @include for-tablet-only{
-            margin-right: 30px;
+        //     @include for-tablet-only{
+        //     margin-right: 30px;
             
-            }
-        }
+        //     }
+        // }
 
 
         &:not(:last-child) {
