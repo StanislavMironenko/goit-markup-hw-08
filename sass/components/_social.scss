@@ -2,15 +2,17 @@
     display: flex;
     justify-content: center;
     
-    @include for-phone-only{
-        justify-content: flex-start;
-    }
+   
 
     &__item:not(:last-child) {
             margin-right: 10px;
 
-            @include for-phone-only{
+            &--menu{
                 border-right: 1px solid rgba(33, 33, 33, 0.2);
+            }
+
+            @include for-phone-only{
+               
                 color: $secondaryColor;
                 padding-right:10px;
             }
