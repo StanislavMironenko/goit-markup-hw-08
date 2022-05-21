@@ -564,6 +564,7 @@ img {
 }
 
 .social__item--menu:not(:last-child) {
+  margin-right: 0;
   display: block;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -646,7 +647,7 @@ img {
 
 @media (min-width: 768px) {
   .team__card {
-    max-width: calc(50% - 15px);
+    width: calc(50% - 15px);
     margin-bottom: 30px;
   }
   .team__card:nth-last-child(-n+2) {
@@ -1509,11 +1510,24 @@ img {
   pointer-events: none;
 }
 
+.mobile__menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .mobile__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 306px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .mobile__social {

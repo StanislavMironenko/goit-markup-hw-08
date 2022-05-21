@@ -45,11 +45,10 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
-      </div>
-                  <button class="burger" type="button" data-mobile-open>
+            <button class="burger" type="button" data-mobile-open>
                           <span class="burger__item">menu</span>
                   </button>
-      <!-- <div class="backdrop-menu is-hidden" > -->
+      
         <div class="mobile is-hidden" data-mobile>
                   <button type="button" class="button__mobil" data-mobile-close> 
                     <svg class="button__mobil--x">
@@ -58,8 +57,8 @@
                 <div class="mobile__menu">
                   <nav class="nav mobile__nav">
                     <ul class="nav__list ">
-                      <li class="nav__item"><a class="nav__link nav__link--active linknon" href="./index.html">Студия</a></li>
-                      <li class="nav__item"><a class="nav__link linknon" href="./portfolio.html">Портфолио</a></li>
+                      <li class="nav__item"><a class="nav__link  linknon" href="./index.html">Студия</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--active linknon" href="./portfolio.html">Портфолио</a></li>
                       <li class="nav__item"><a class="nav__link linknon" href="#">Контакты</a></li>
                     </ul>
                   </nav>
@@ -71,25 +70,25 @@
                       <a class="contacts__link contacts__link--mail linknon" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                   </ul>
-                  <div class="mobile__social">
-                   <ul class="social">
-                     <li class="social__item">
-                       <a class="social__link linknon" href="">Instagram</a>
+                  <ul class="social mobile__social">
+                     <li class="social__item social__item--menu">
+                       <a class="social__link  linknon" href="">Instagram</a>
                      </li>
-                      <li class="social__item">
-                       <a class="social__link linknon" href="">Twitter</a>
+                      <li class="social__item social__item--menu">
+                       <a class="social__link  linknon" href="">Twitter</a>
                      </li>
-                      <li class="social__item">
-                       <a class="social__link linknon" href="">Facebook</a>
+                      <li class="social__item social__item--menu">
+                       <a class="social__link  linknon" href="">Facebook</a>
                      </li>
-                      <li class="social__item">
-                       <a class="social__link linknon" href="">LinkedIn</a>
+                      <li class="social__item social__item--menu">
+                       <a class="social__link  linknon" href="">LinkedIn</a>
                      </li>
                    </ul>
-                  </div>
                 </div>
                 </div>
-                <!-- </div> -->
+      </div>
+              
+               
     </header>
     <main>
       <section class="section port">
@@ -105,7 +104,10 @@
           <ul class="project">
             <li class="project__item">
               <div class="project__thumb">
-                <img class="project__img" src="./images/port1.jpg" alt="Технокряк" width="370" />
+                <img class="project__img"
+                srcset="./images/port1.jpg 1x, ./images/port1@x2.jpg 2x" 
+                src="./images/port1.jpg" 
+                alt="Технокряк" width="370" />
                 <div class="project__back">
                   <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
@@ -121,7 +123,10 @@
             </li>
             <li class="project__item">
               <div class="project__thumb">
-                <img class="project__img" src="./images/port2.jpg" alt="Постер" width="370" />
+                <img class="project__img"
+                srcset="./images/port2.jpg 1x, ./images/port2@x2.jpg 2x"  
+                src="./images/port2.jpg" 
+                alt="Постер" width="370" />
                 <div class="project__back">
                   <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
@@ -137,7 +142,10 @@
             </li>
             <li class="project__item">
               <div class="project__thumb">
-                <img class="project__img" src="./images/port3.jpg" alt="Ресторан" width="370" />
+                <img class="project__img"
+                srcset="./images/port3.jpg 1x, ./images/port3@x2.jpg 2x"  
+                src="./images/port3.jpg" 
+                alt="Ресторан" width="370" />
                 <div class="project__back">
                   <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
@@ -154,7 +162,10 @@
             </li>
             <li class="project__item">
               <div class="project__thumb">
-                <img class="project__img" src="./images/port4.jpg" alt="Проект Prime" width="370" />
+                <img class="project__img"
+                srcset="./images/port4.jpg 1x, ./images/port4@x2.jpg 2x"  
+                src="./images/port4.jpg" 
+                alt="Проект Prime" width="370" />
                 <div class="project__back">
                   <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
@@ -171,7 +182,10 @@
             </li>
             <li class="project__item">
               <div class="project__thumb">
-                <img class="project__img" src="./images/port5.jpg" alt="Проект Boxes" width="370" />
+                <img class="project__img"
+                srcset="./images/port5.jpg 1x, ./images/port5@x2.jpg 2x"  
+                src="./images/port5.jpg" 
+                alt="Проект Boxes" width="370" />
                 <div class="project__back">
                   <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
@@ -188,7 +202,10 @@
             </li>
             <li class="project__item">
               <div class="project__thumb">
-                <img class="project__img" src="./images/port6.jpg" alt="Cайт" width="370" />
+                <img class="project__img"
+                srcset="./images/port6.jpg 1x, ./images/port6@x2.jpg 2x"  
+                src="./images/port6.jpg" 
+                alt="Cайт" width="370" />
                 <div class="project__back">
                   <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
@@ -207,6 +224,7 @@
               <div class="project__thumb">
                 <img
                   class="project__img"
+                  srcset="./images/port7.jpg 1x, ./images/port7@x2.jpg 2x" 
                   src="./images/port7.jpg"
                   alt="Издание Limited Edition"
                   width="370"
@@ -227,7 +245,10 @@
             </li>
             <li class="project__item">
               <div class="project__thumb">
-                <img class="project__img" src="./images/port8.jpg" alt="Проект LAB" width="370" />
+                <img class="project__img"
+                srcset="./images/port8.jpg 1x, ./images/port8@x2.jpg 2x"  
+                src="./images/port8.jpg" 
+                alt="Проект LAB" width="370" />
                 <div class="project__back">
                   <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
@@ -244,7 +265,10 @@
             </li>
             <li class="project__item">
               <div class="project__thumb">
-                <img class="project__img" src="./images/port9.jpg" alt="Growing Business" width="370" />
+                <img class="project__img"
+                srcset="./images/port9.jpg 1x, ./images/port9@x2.jpg 2x"  
+                src="./images/port9.jpg" 
+                alt="Growing Business" width="370" />
                 <div class="project__back">
                   <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и

@@ -18,9 +18,14 @@
     
             
         }
+        &__menu{
+            height: 100%;
+            display: flex;
+            flex-direction: column
+        }
         &__nav{
         display: flex;
-        margin-bottom: 306px;
+        flex-grow: 1;
         }
         &__social{
             color: $secondaryColor;
