@@ -3,8 +3,9 @@
     // display: flex;
     
 
-        @include for-tablet-only{
-            margin-right: 84px;
+        @include for-tablet-up{
+            display: block;
+            
         }
    
 

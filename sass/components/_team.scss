@@ -1,24 +1,47 @@
 .team {
+
+    @include for-tablet-up{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    }
 
     @include for-desktop-up{
         flex-wrap: nowrap;
     }
 
     &__card {
-        width: 100%;
+        
 
         background-color:$whiteColor;
         text-align: center;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-            &:not(:last-child) {
+
+        &:not(:last-child) {
                 margin-bottom: 30px;
 
-                @include for-desktop-up {
-                        margin-right: 30px;
-                        margin-bottom: 0;
+            @include for-desktop-up {
+                   
+                    margin-bottom: 0;
+            
+                }
+
+        }
+        @include for-tablet-up{
+          max-width: calc(50% - 15px);
+          margin-bottom: 30px;
+
+        &:nth-last-child(-n+2) {
+                margin-bottom: 0px;
+            }
+    
+            
+               
+
+        @include for-desktop-up {
+                margin-right: 30px;
+                margin-bottom: 0;
+                
                     }
                    
                 }

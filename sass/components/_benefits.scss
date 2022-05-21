@@ -1,6 +1,11 @@
 .benefits {
+
+
+    @include for-tablet-up{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    }
 
     
     @include for-desktop-up{
@@ -10,34 +15,28 @@
     &__item{
         margin-bottom: 30px ;
 
-       
+        @include for-desktop-up{
+            margin-bottom: 0;
+        }
 
-        // &:nth-child(odd){
-
-        //     @include for-tablet-only{
-        //     margin-right: 30px;
-            
-        //     }
-        // }
-
-
-        &:not(:last-child) {
-                display: block;
-                margin-bottom: 30px;
-        
-                @include for-desktop-up {
-                    margin-right: 30px;
-                }
+        @include for-tablet-up{
+        width: calc(50% - 15px);
+        &:nth-last-child(-n+2) {
+                margin-bottom: 0px;
             }
-    }
-    // &__item:not(:last-child) {
-    //     display: block;
-    //     margin-bottom: 30px;
+        }
 
-    //     @include for-desktop-up{
-    //         margin-right: 30px;
-    //     }
-    //     }
+        // &:nth-last-child(-n+2) {
+        //     margin-bottom: 0px;
+        //         }
+        &:not(:last-child) {       
+        
+        @include for-desktop-up {
+            margin-right: 30px;}
+
+        }
+    }
+       
 
     &__img {
             display: flex;
@@ -50,9 +49,7 @@
             height: 120px;
             background-color: $buttonColor;
 
-            @include for-tablet-only{
-               
-            }
+            
 
             @include for-desktop-up{
                 max-width: 270px;

@@ -7,7 +7,7 @@
     &__inner {
         display: flex;
         align-items: center;
-
+        justify-content: space-between
       
         }
     
@@ -35,6 +35,9 @@
             display: flex;
             margin-left: auto;
             flex-direction: column;
+        }
+        @include for-desktop-up{
+            flex-direction: row;
         }
 
         
