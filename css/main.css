@@ -270,10 +270,8 @@ img {
 }
 
 .burger {
-  display: block;
   width: 40px;
   height: 40px;
-  padding: 12px 8px;
   background: none;
   border: 0;
   cursor: pointer;
@@ -287,40 +285,13 @@ img {
 
 .burger__item {
   display: block;
-  width: 24px;
-  height: 2.67px;
-  background-color: #000000;
+  width: 40px;
+  height: 40px;
   font-size: 0;
-  color: transparent;
-  position: relative;
 }
 
 .burger:hover .burger__item, .burger__item .burger:focus {
   background-color: #2196F3;
-}
-
-.burger__item::before, .burger__item::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  position: absolute;
-  left: 0;
-  z-index: 1;
-}
-
-.burger:hover .burger__item::before,
-.burger:focus .burger__item::before, .burger:hover .burger__item::after,
-.burger:focus .burger__item::after {
-  background-color: #2196F3;
-}
-
-.burger__item::after {
-  bottom: -6px;
-}
-
-.burger__item::before {
-  top: -6px;
 }
 
 .hero {
@@ -898,6 +869,32 @@ img {
   width: 40px;
 }
 
+.button__burger {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .button__burger {
+    display: none;
+  }
+}
+
+.button__burger--icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+
+.burger:hover .button__burger--icon,
+.button__burger--icon .burger:focus {
+  background-color: #2196F3;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1301,6 +1298,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
+  z-index: 20;
 }
 
 @media (min-width: 1200px) {

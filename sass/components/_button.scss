@@ -105,4 +105,29 @@
             width: 40px;
         }
     }
+    &__burger{
+        width: 40px;
+        height: 40px; 
+        background: none;
+        border: 0;
+        cursor: pointer;
+        
+            @include for-tablet-up {
+                display: none;
+            }
+        
+        &--icon {
+            display: block;
+            width: 40px;
+            height: 40px;        
+            font-size: 0;      
+              
+            .burger:hover &,
+            .burger:focus {
+                    background-color: $secondaryColor;
+                }
+        
+        
+            }
+    }
 }
