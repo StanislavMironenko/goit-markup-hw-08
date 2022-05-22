@@ -33,6 +33,10 @@
             font-size: 34px;
             color: $secondaryColor;
             margin-bottom: 32px;
+
+            @include for-phone-min{
+                font-size: 26px;
+            }
         }
 
         &:hover,

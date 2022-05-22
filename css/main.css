@@ -269,31 +269,6 @@ img {
   margin-right: 50px;
 }
 
-.burger {
-  width: 40px;
-  height: 40px;
-  background: none;
-  border: 0;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-}
-
-.burger__item {
-  display: block;
-  width: 40px;
-  height: 40px;
-  font-size: 0;
-}
-
-.burger:hover .burger__item, .burger__item .burger:focus {
-  background-color: #2196F3;
-}
-
 .hero {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header480.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header480.jpg);
@@ -525,6 +500,10 @@ img {
           justify-content: center;
 }
 
+.social__item:nth-child(n) {
+  padding-left: 0;
+}
+
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
@@ -543,6 +522,12 @@ img {
 .social__link {
   color: #2196F3;
   font-size: 18px;
+}
+
+@media (max-width: 375px) {
+  .social__link {
+    font-size: 14px;
+  }
 }
 
 .social__icon {
@@ -1236,6 +1221,12 @@ img {
   margin-bottom: 32px;
 }
 
+@media (max-width: 375px) {
+  .contacts__link--tel {
+    font-size: 26px;
+  }
+}
+
 .contacts__link:hover, .contacts__link:focus {
   color: #2196F3;
   fill: #2196F3;
@@ -1419,9 +1410,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

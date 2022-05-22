@@ -4,13 +4,17 @@
     
    
 
-    &__item{ 
+    &__item{
+        &:nth-child(n){
+            padding-left: 0;
+        }
     &:not(:last-child) {
             margin-right: 10px;}
 
         &--menu{
             padding: 0 10px;
             margin-right: 0;
+
         &:not(:last-child){ 
         margin-right: 0;
         display: block;            
@@ -23,12 +27,10 @@
     &__link{
         color: $secondaryColor;
         font-size: 18px;
-        
-        // &:not(:last-child){
 
-
-        
-        // }
+        @include for-phone-min{
+            font-size: 14px;
+        }
 
     }
 
