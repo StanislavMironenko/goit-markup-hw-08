@@ -498,7 +498,7 @@ img {
           justify-content: center;
 }
 
-.social__item:nth-child(n) {
+.social__item:nth-child(1) {
   padding-left: 0;
 }
 
